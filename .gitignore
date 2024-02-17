@@ -1,0 +1,6 @@
+﻿out/
+*.class
+*.iml
+*.xml
+.idea
+Lesson_2
