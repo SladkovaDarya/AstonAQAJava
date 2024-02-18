@@ -4,20 +4,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println(amountLimits(5, 7));
         someNumber(-1);
         System.out.println(isPositiveNumber(2));
         printLine("Hi", 3);
         System.out.println(isLeapYear(2020));
-
         arrayInt();
         arrHundredValues();
         multiplyNumbersLessSix();
         fillTwoDimensionalArray();
         System.out.println(Arrays.toString(createIntArr(6, 10)));
-
-
     }
 
     /* 1. Написать метод, принимающий на вход два целых числа и проверяющий,
@@ -32,8 +28,8 @@ public class Main {
     }
 
     /* 2. Написать метод, которому в качестве параметра передается целое число,
-     метод должен напечатать в консоль, положительное ли число передали или отрицательное.
-     Замечание: ноль считаем положительным числом. */
+    метод должен напечатать в консоль, положительное ли число передали или отрицательное.
+    Замечание: ноль считаем положительным числом. */
     public static void someNumber(int number) {
         if (number >= 0) {
             System.out.println("Положительное число");
@@ -43,8 +39,8 @@ public class Main {
     }
 
     /* 3. Написать метод, которому в качестве параметра передается целое число.
-     Метод должен вернуть true, если число отрицательное,
-     и вернуть false если положительное. */
+    Метод должен вернуть true, если число отрицательное,
+    и вернуть false если положительное. */
     public static boolean isPositiveNumber(int number) {
         if (number >= 0) {
             return true;
@@ -82,11 +78,9 @@ public class Main {
     С помощью цикла и условия заменить 0 на 1, 1 на 0; */
     public static void arrayInt() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-
         for (int i = 0; i < arr.length; i++) {
             arr[i] = arr[i] == 0 ? 1 : 0;
         }
-
         System.out.println(Arrays.toString(arr));
     }
 
@@ -143,6 +137,4 @@ public class Main {
         }
         return arr;
     }
-
-
 }
