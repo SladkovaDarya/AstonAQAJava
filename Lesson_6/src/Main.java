@@ -3,7 +3,6 @@ import java.util.StringJoiner;
 
 public class Main {
     public static final String PATH_DIR = "Lesson_6";
-    public static InputStream is = null;
 
     public static void main(String[] args) {
         //создали файл
