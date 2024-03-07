@@ -15,7 +15,7 @@ public class Main {
         }
     }
 
-    public static List<String> fillList(){
+    public static List<String> fillList() {
         List<String> list = new ArrayList<>();
         list.add("Vasya");
         list.add("Vasya");
