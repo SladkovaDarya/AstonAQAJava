@@ -1,4 +1,4 @@
-package aston;
+package ru.aston;
 
 /**
  * Hello world!
