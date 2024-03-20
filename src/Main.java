@@ -17,10 +17,10 @@ public class Main {
     public static void evenNumbers() {
        /* Даша, посмотри плиз на подсказки идеи (если ты ее используешь),
          в частности в записи collect(Collectors.toList()); - упрости ее.*/
-        IntStream il = new Random()
+        long cnt = new Random()
                 .ints(10, 1, 100)
-                .peek(i -> System.out.print(i + " "));
-        long cnt = il.filter(a -> a % 2 == 0).count();
+                .peek(i -> System.out.print(i + " "))
+                .filter(a -> a % 2 == 0).count();
         System.out.println("Количество четных чисел : " + cnt);
     }
 
