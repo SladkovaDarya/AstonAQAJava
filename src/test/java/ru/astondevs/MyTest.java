@@ -10,7 +10,7 @@ import static ru.astondevs.Factorial.isSuitableNumber;
 
 public class MyTest {
 
-    @Test
+    @Test(description = "Positive test")
     public void positiveNumber() {
         // Другой тестовый случай
         int param = 5;
@@ -19,7 +19,7 @@ public class MyTest {
         assertEquals(expect, result);
     }
 
-    @Test
+    @Test(description = "Negative test")
     public void negativeNumber() {
         int param = -1;
         boolean expect = false;
@@ -27,7 +27,7 @@ public class MyTest {
         assertEquals(expect, result);
     }
 
-    @Test
+    @Test(description = "Negative test")
     public void zeroNumber() {
         int param = 0;
         boolean expect = false;
@@ -35,7 +35,7 @@ public class MyTest {
         assertEquals(expect, result);
     }
 
-    @Test
+    @Test(description = "Negative test")
     public void aboveLimitNumber() {
         int param = 100;
         boolean expect = false;

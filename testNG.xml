@@ -3,7 +3,7 @@
 <suite name="my test">
     <test name="my test">
         <classes>
-            <class name = "ru.astondevs.MyTest" />
+            <class name="ru.astondevs.MyTest"/>
         </classes>
     </test>
 </suite>
