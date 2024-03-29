@@ -20,9 +20,9 @@ public class BaseTest {
         driver.get("https://www.mts.by");
     }
 
-/*    @AfterTest
+    @AfterTest
     public void tearDown() {
         driver.close();
         driver.quit();
-    } */
+    }
 }
