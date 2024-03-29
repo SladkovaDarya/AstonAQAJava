@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import ru.astondevs.pageEntity.PageEntity;
 
 public class AboutServiseTest extends BaseTest {
-
     @Test
     public void checkAboutService() {
         PageEntity mts = PageFactory.initElements(driver, PageEntity.class);
@@ -14,6 +13,6 @@ public class AboutServiseTest extends BaseTest {
         mts.clickAboutService();
         String actualUrl = driver.getCurrentUrl();
         String expectedUrl = "https://www.mts.by/help/poryadok-oplaty-i-bezopasnost-internet-platezhey/";
-        Assert.assertEquals(actualUrl,expectedUrl);
+        Assert.assertEquals(actualUrl, expectedUrl);
     }
 }

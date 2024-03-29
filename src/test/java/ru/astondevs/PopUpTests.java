@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import ru.astondevs.pageEntity.PageEntity;
 
 public class PopUpTests extends BaseTest {
-
     @BeforeTest
     public void sendForm() {
         PageEntity mts = PageFactory.initElements(driver, PageEntity.class);

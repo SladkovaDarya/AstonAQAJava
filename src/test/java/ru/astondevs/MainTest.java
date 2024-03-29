@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import ru.astondevs.pageEntity.PageEntity;
 
 public class MainTest extends BaseTest {
-
     @Test
     public void open() {
         PageEntity mts = PageFactory.initElements(driver, PageEntity.class);
