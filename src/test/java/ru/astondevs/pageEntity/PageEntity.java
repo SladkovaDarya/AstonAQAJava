@@ -3,8 +3,6 @@ package ru.astondevs.pageEntity;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.StringJoiner;
-
 public class PageEntity {
     @FindBy(xpath = "//button[@id='cookie-agree']")
     private WebElement buttonAgree;
