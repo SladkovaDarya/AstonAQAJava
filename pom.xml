@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ru.astondevs</groupId>
-  <artifactId>Lesson_11_maven</artifactId>
+  <artifactId>Lesson_13_maven</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Lesson_11_maven</name>
+  <name>Lesson_13_maven</name>
   <url>https://astondevs.ru/</url>
 
   <properties>
