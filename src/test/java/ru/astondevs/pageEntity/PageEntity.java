@@ -37,16 +37,8 @@ public class PageEntity {
         }
     }
 
-    public String checkBlockName() {
-        String text = blockName.getText();
-        String[] parts = text.split(" ");
-        String[] subparts = parts[1].split("\n");
-        StringJoiner stringJoiner = new StringJoiner(" ");
-        stringJoiner.add(parts[0]);
-        stringJoiner.add(subparts[0]);
-        stringJoiner.add(subparts[1]);
-        stringJoiner.add(parts[2]);
-        return String.valueOf(stringJoiner);
+    public WebElement getBlockName() {
+        return blockName;
     }
 
     public boolean visaLogo() {
@@ -88,6 +80,8 @@ public class PageEntity {
     }
 
     public void clickButtonContinue() {
-        buttonContinue.click();
+        if (buttonContinue.isDisplayed()) {
+            buttonContinue.click();
+        }
     }
 }

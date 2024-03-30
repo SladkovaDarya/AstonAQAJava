@@ -1,5 +1,6 @@
 package ru.astondevs;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,8 +16,10 @@ public class MainTest extends BaseTest {
     @Test
     public void blockName() {
         PageEntity mts = PageFactory.initElements(driver, PageEntity.class);
-        String actualName = mts.checkBlockName();
-        Assert.assertEquals(actualName, "Онлайн пополнение без комиссии");
+        WebElement h = mts.getBlockName();
+        String header = h.getText().trim().replaceAll("\n", " ");
+        String expect = "Онлайн пополнение без комиссии";
+        Assert.assertEquals(header, expect);
     }
 
     @Test
