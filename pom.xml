@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ru.astondevs</groupId>
-  <artifactId>Lesson_11_maven</artifactId>
+  <artifactId>Lesson_15</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Lesson_11_maven</name>
+  <name>Lesson_15</name>
   <url>https://astondevs.ru/</url>
 
   <properties>
@@ -17,11 +17,11 @@
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.10.2</version>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.9.0</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -30,8 +30,13 @@
       <artifactId>selenium-java</artifactId>
       <version>4.18.1</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.7.0</version>
+    </dependency>
   </dependencies>
-
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
