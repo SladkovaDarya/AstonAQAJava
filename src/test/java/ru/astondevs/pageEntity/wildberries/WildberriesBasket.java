@@ -33,7 +33,7 @@ public class WildberriesBasket {
         return Integer.parseInt(parts[1]);
     }
 
-    private List<Integer> pullPrice() {
+    public List<Integer> pullPrice() {
         List<WebElement> listPrice = wildberriesBasketPage.getPrices();
         List<Integer> price = new ArrayList<>();
         for (WebElement element : listPrice) {

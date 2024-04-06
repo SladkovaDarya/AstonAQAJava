@@ -41,11 +41,12 @@ public class MainTests extends BaseTest {
     @Test(priority = 3) // цена продуктов при подсчете и общая с сайта
     public void price() {
         int basketCnt = wildberriesBasket.getAddingSum();
+        System.out.println(wildberriesBasket.pullPrice());
         System.out.println(basketCnt);
         int commonPrice = wildberriesBasket.pullCommonPrice();
         System.out.println(commonPrice);
-        Assert.assertEquals(basketCnt,commonPrice);
-   }
+        Assert.assertEquals(basketCnt, commonPrice);
+    }
 
 
 }
