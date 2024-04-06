@@ -16,13 +16,13 @@ public class BaseTest {
         WebDriverManager.chromedriver().clearDriverCache().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.mts.by");
     }
 
-    @AfterTest
+  /*  @AfterTest
     public void tearDown() {
         driver.close();
         driver.quit();
-    }
+    } */
 }
