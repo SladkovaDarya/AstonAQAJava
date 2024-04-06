@@ -37,7 +37,8 @@ public class WildberriesBasket {
         List<WebElement> listPrice = wildberriesBasketPage.getPrices();
         List<Integer> price = new ArrayList<>();
         for (WebElement element : listPrice) {
-            String numb = element.getText().trim().replaceAll(" ₽", "");
+            String subNumb = element.getText().replaceAll(" ₽", "");
+            String numb = subNumb.replaceAll(" ", "");
             price.add(Integer.parseInt(numb));
         }
         return price;
@@ -47,7 +48,7 @@ public class WildberriesBasket {
         List<Integer> price = pullPrice();
         int cnt = 0;
         for (int i : price) {
-            cnt = cnt + i;
+            cnt += i;
         }
         return cnt;
     }
