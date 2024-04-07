@@ -18,9 +18,9 @@ public class BaseTest {
         driver.get("https://www.wildberries.ru/");
     }
 
- /*   @AfterTest
+    @AfterTest
     public void tearDown() {
         driver.close();
         driver.quit();
-    } */
+    }
 }

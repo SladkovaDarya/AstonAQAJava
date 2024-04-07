@@ -26,8 +26,6 @@ public class MainTests extends BaseTest {
         Thread.sleep(7000);
         driver.get("https://www.wildberries.ru/lk/basket");
         Set<String> namesBasketPage = wildberriesBasket.handlingBasketNames();
-        System.out.println(namesMainPage);
-        System.out.println(namesBasketPage);
         Assert.assertEquals(namesMainPage, namesBasketPage);
     }
 
@@ -42,10 +40,7 @@ public class MainTests extends BaseTest {
     //по локаторам выходят значения вообще не соответствующие отображаемым на сайте
     public void price() {
         int basketCnt = wildberriesBasket.getAddingSum();
-        System.out.println(wildberriesBasket.pullPrice());
-        System.out.println(basketCnt);
         int commonPrice = wildberriesBasket.pullCommonPrice();
-        System.out.println(commonPrice);
         Assert.assertNotEquals(basketCnt, commonPrice);
     }
 }
