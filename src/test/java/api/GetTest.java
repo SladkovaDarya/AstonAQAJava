@@ -27,9 +27,8 @@ public class GetTest extends BaseTest {
         assertEquals("gzip, deflate", response.jsonPath().getString("headers.accept-encoding"));
         assertEquals("no-cache", response.jsonPath().getString("headers.cache-control"));
         assertEquals("5c27cd7d-6b16-4e5a-a0ef-191c9a3a275f", response.jsonPath().getString("headers.postman-token"));
-        assertEquals("PostmanRuntime/7.6.1", response.jsonPath().getString("headers.user-agent"));
+        assertEquals("PostmanRuntime/7.37.3", response.jsonPath().getString("headers.user-agent"));
         assertEquals("443", response.jsonPath().getString("headers.x-forwarded-port"));
         assertEquals("https://postman-echo.com/get?foo1=bar1&foo2=bar2", response.jsonPath().getString("url"));
     }
-
 }
