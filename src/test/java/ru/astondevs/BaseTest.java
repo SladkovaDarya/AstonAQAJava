@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     protected AppiumDriver<AndroidElement> driver;
-
+    protected Calculator calculator;
     @BeforeTest
     public void setup() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -24,10 +24,9 @@ public class BaseTest {
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.calculator");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.android.calculator2.Calculator");
         capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
-
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Calculator calculator = new Calculator(driver);
+        calculator = new Calculator(driver);
     }
 
     @AfterTest
@@ -35,5 +34,4 @@ public class BaseTest {
         if(driver != null)
             driver.quit();
     }
-
 }
