@@ -2,6 +2,7 @@ package ru.astondevs;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class Calculator {
@@ -25,6 +26,7 @@ public class Calculator {
         this.driver = driver;
     }
 
+    @Step
     public String addition() {
         driver.findElement(twoButton).click();
         driver.findElement(plusButton).click();
@@ -32,7 +34,7 @@ public class Calculator {
         driver.findElement(equalsButton).click();
         return result();
     }
-
+    @Step
     public String multiplication() {
         driver.findElement(fourButton).click();
         driver.findElement(multiplyButton).click();
@@ -40,7 +42,7 @@ public class Calculator {
         driver.findElement(equalsButton).click();
         return result();
     }
-
+    @Step
     public String subtraction() {
         driver.findElement(sevenButton).click();
         driver.findElement(minusButton).click();
@@ -48,7 +50,7 @@ public class Calculator {
         driver.findElement(equalsButton).click();
         return result();
     }
-
+    @Step
     public String division() {
         driver.findElement(sixButton).click();
         driver.findElement(divisionButton).click();
@@ -56,7 +58,7 @@ public class Calculator {
         driver.findElement(equalsButton).click();
         return result();
     }
-
+    @Step
     public String divisionByZero() {
         driver.findElement(eightButton).click();
         driver.findElement(divisionButton).click();
